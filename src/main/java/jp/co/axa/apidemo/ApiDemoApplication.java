@@ -2,12 +2,16 @@ package jp.co.axa.apidemo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import springfox.documentation.swagger2.annotations.EnableSwagger2;
+import org.springframework.cache.annotation.EnableCaching;
 
-@EnableSwagger2
+import lombok.Generated;
+
+//@EnableSwagger2
 @SpringBootApplication
+@EnableCaching
 public class ApiDemoApplication {
 
+	@Generated
 	public static void main(String[] args) {
 		SpringApplication.run(ApiDemoApplication.class, args);
 	}
